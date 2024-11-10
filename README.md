@@ -91,5 +91,6 @@ Sorry, no idea.
 
 This project is based on the following resources:
 
+- This Rust project was generated with the [rp-rs/rp2040-project-template](https://github.com/rp-rs/rp2040-project-template)
 - [Arbitrary Wave Generator With the Raspberry Pi Pico](https://www.instructables.com/Arbitrary-Wave-Generator-With-the-Raspberry-Pi-Pic)
 - [Raspberry Pi Pico PIO - Ep. 14 - Arbitrary Waveform Generator](https://www.youtube.com/watch?v=_lZ1Pw6WAqI)
