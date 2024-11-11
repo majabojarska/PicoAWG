@@ -65,11 +65,32 @@ In addition:
 
 - GPIO count/capabilities. Is there a way to configure 22 PIO pins while keeping `UART0` and one `I2C bus` functional?
 
+## Development
+
+### Setting up the Debug Probe
+
+This project leverages the [raspberrypi/debugprobe](https://github.com/raspberrypi/debugprobe) for development and debugging.
+
+#### Linux
+
+Copy [`99-pico-debug-probe.rules`](99-pico-debug-probe.rules) to `/etc/udev/rules.d/`
+
+To make the rule effective immiediately, run:
+
+```bash
+udevadm control --reload-rules && udevadm trigger
+```
+
+#### Windows, Darwin
+
+> womp womp
+
+Sorry, no idea.
+
 ## Attributions
 
-This project is based on the following resources.
+This project is based on the following resources:
 
-| Resource                                                                            | License                                                           |
-| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| <https://www.instructables.com/Arbitrary-Wave-Generator-With-the-Raspberry-Pi-Pic/> | [CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) |
-| <https://github.com/BourneAgainMax/ArbitraryWaveFormGenerator_RaspPico/>            | [CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) |
+- This Rust project was generated with the [rp-rs/rp2040-project-template](https://github.com/rp-rs/rp2040-project-template)
+- [Arbitrary Wave Generator With the Raspberry Pi Pico](https://www.instructables.com/Arbitrary-Wave-Generator-With-the-Raspberry-Pi-Pic)
+- [Raspberry Pi Pico PIO - Ep. 14 - Arbitrary Waveform Generator](https://www.youtube.com/watch?v=_lZ1Pw6WAqI)
