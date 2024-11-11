@@ -17,7 +17,7 @@ Arbitrary Waveform Generator (AWG) based on the Raspberry Pi Pico (RP2040).
 | Max Sampling Rate    | 125MSa/s        |
 | Channels             | 2               |
 | Vertical Resolution  | 11 bit          |
-| Max Output Frequency | 20 MHz (unsure) |
+| Max Output Frequency | 5 MHz (unsure)  |
 | Waveform length      | 2048pt/s        |
 
 > It's not much, [but it's honest work](https://knowyourmeme.com/memes/but-its-honest-work).
